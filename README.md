@@ -1,5 +1,5 @@
 # TechTreds Web Application
-
+Update
 This is a Flask application that lists the latest articles within the cloud-native ecosystem.
 
 ## Run 
