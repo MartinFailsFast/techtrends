@@ -1,0 +1,150 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.178.52:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:22:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:22:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 44, in post
+    post = get_post(post_id)
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 25, in get_post
+    app.logger.info("Article "+ post.title + " retrieved!")
+                                ^^^^^^^^^^
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:22:24] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 44, in post
+    post = get_post(post_id)
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 25, in get_post
+    app.logger.info("Article "+ post.title + " retrieved!")
+                                ^^^^^^^^^^
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:22:33] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.178.52:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 44, in post
+    post = get_post(post_id)
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 25, in get_post
+    app.logger.info(f"Article {post.title} retrieved!")
+                               ^^^^^^^^^^
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:25:56] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 44, in post
+    post = get_post(post_id)
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 25, in get_post
+    app.logger.info(f"Article {post.title} retrieved!")
+                               ^^^^^^^^^^
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:25:57] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 44, in post
+    post = get_post(post_id)
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 25, in get_post
+    app.logger.info(f"Article {post.title} retrieved!")
+                               ^^^^^^^^^^
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:25:58] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Coding4Kids\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 44, in post
+    post = get_post(post_id)
+  File "C:\Users\Coding4Kids\VS_StudioProjects\techtrends\app.py", line 25, in get_post
+    app.logger.info(f"Article {post.title} retrieved!")
+                               ^^^^^^^^^^
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:26:00] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.178.52:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:07] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:07] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.178.52:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:36] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:37] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:38] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:39] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:39] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:42] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2025 14:27:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

@@ -1,0 +1,35 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+docker build -t techtrends .
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+docker logs b0d2a00a282df16347258115bd1f38097eb4d1026bad44724dff7390c468329d
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.17.0.3:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:02:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:02:44] "GET /static/css/main.css HTTP/1.1" 200 -        
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:02:44] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:03:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:03:49] "GET /static/css/main.css HTTP/1.1" 304 -        
+INFO:app:05/03/2025, 20:03:53, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:03:53] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:03:53] "GET /static/css/main.css HTTP/1.1" 304 -        
+INFO:app:05/03/2025, 20:03:56, Article "KubeCon + CloudNativeCon 2021" retrieved!
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:03:56] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:03:56] "GET /static/css/main.css HTTP/1.1" 304 -        
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:05:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Mar/2025 20:05:31] "GET /static/css/main.css HTTP/1.1" 304 -   
