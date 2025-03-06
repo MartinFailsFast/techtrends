@@ -4,7 +4,7 @@ namespace:
 service:
   port: 7111
 
-replicaCount: 3
+replicaCount: 5
 
 resources:
   requests:
