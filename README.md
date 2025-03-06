@@ -13,6 +13,18 @@ To run this application there are 2 steps required:
 docker build -t techtrends .
 docker run -d -p 7111:3111 techtrends
 
+## kubectl
+kubectl port-forward techtrends-6fd5884575-658b5 --address 0.0.0.0 3111:3111 -n sandbox
+
+## ARGO
+CLI Install:
+- curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+- sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
+- rm argocd-linux-amd64
+
+Service.yaml for Node Port forwarding: https://192.168.50.4:30008
+User: admin
+PW: argocd admin initial-password -n argocd
 
 # Configure the logging system
  #INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 22:40:06] "GET /metrics HTTP/1.1" 200 -
